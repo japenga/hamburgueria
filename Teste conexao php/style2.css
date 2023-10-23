@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+body{
+    background-image: linear-gradient(90deg, rgb(20, 147, 220),rgb(17, 54, 71));
+}
+header{
+    display: none;
+
+}
+a{
+    text-decoration: none;
+}
+.bar{
+    width: 100vw;
+    height:100%;
+}
+.bar .container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding: 15px;
+}
+.container .logo{
+    font-size: 23px;
+    font-weight: 600;
+}
+.container .logo p{
+    color: white;
+}
+.container .logo span{
+    color: orangered;
+}
+.container .buttons{
+    width: 320px;
+    display: flex;
+    justify-content: space-around;
+}
+.container .buttons a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+.container .buttons a::after{
+    content: '';
+    display: block;
+    background-color: orangered;
+    height: 3px;
+    width: 0%;
+    margin: 0 auto;
+    transition: .3s;
+}
+.container .buttons a:hover::after{
+    width: 100%;
+}
+.buttons i{
+    color: white;
+    cursor: pointer;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, .3); */
+}
+.content .cardapio{
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    justify-content: space-around;
+   width: 60%;
+   height: 90%;
+   align-content: space-around;
+   background-color: rgba(0, 0, 0, .3);
+   border-radius: 10px;
+   padding: 30px 45px;
+   overflow: hidden;
+}
+.content .cardapio .ci img{
+    width: 180px;
+    border-radius: 5px;
+}
+.cardapio .cardapio-images img{
+    width: 180px; 
+    border-radius: 6px;
+
+}
+.cardapio .cardapio-images{
+    width: 240px;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    transition: .3s;
+}
+.content .h2{
+    margin-top: 8rem;
+    color: white;
+}
+.content .h2 h2{
+    margin: auto;
+    width: 160px;
+    border-bottom: 2px solid white;
+}
+.content .h2 span{
+    color: orangered;
+}
+.content .text-cardapio{
+    margin-top: 2rem;
+    color: white;
+}
+.text-cardapio span{
+    color: orangered;
+}
+.cardapio .cardapio-images:hover{
+    margin-top: -5%;
+    cursor: pointer;
+}
+.i i{
+    margin-top: 10px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    
+}
+.content .i{
+    display: flex;
+    width: 59%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 43%;
+}
+/* card do lanche */
+.itens-cardapio{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.itens-cardapio .container{ 
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow:1px 1px 60px rgb(111, 126, 128);
+    width: 50%;
+    height: 500px;
+    padding: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+.container .content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .img-cardapio img{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    margin-top: 40px;
+}
+.container .logo{
+    width: 100px;
+    border-radius: 100%;
+    float: right;
+}
+.container .text-cardapio{
+    text-align: center;
+    font-size: 20px;
+}
+.container .text-cardapio h2{
+    color: white;
+}
+.container .text-cardapio p{
+    color: white;
+}
+.container .text-cardapio .price{
+    display: flex;
+    margin-top: 80px;
+    width: 100%;
+    justify-content: space-around;
+
+}
+.container .text-cardapio .price a{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: orangered;
+}
+.container .x{
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    left: 2%;
+    
+}
